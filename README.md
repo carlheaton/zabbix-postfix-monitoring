@@ -79,7 +79,7 @@ The following files will be acceessed
 | Statistcis | [postfix spool]/incoming|maildrop|corrupt|deferred|active|hold/* |
 
 As most commands are run with sudo flag the following sudo entry is needed.
-in /etc/suders.d/zabbix
+in /etc/sudoers.d/zabbix
 ```
 # for postfix running
 zabbix ALL = (ALL) NOPASSWD: /bin/cat /*/pid/master.pid
@@ -157,7 +157,7 @@ The following templates exists
 
 ### UserParameter file
 
-The userparameter_postfix.conf file needs to be copied into the zabbix userparameter config folder usualy located in /etc/zabbix/zabbig_agentd.conf.d/
+The userparameter_postfix.conf file needs to be copied into the zabbix userparameter config folder usualy located in /etc/zabbix/zabbix_agentd.conf.d/
 
 # Template App Postfix Simple
 
